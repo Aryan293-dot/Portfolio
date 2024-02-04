@@ -1,0 +1,396 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html,body{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+:root{
+    --maincolour:#E3FDFD;
+    --blackwhite:#000;    
+    --skills-color:#fff;
+}
+.theme-container{
+    background-color: var(--maincolour);
+    text-align: right;
+}
+/* Heading-Files */
+h1{
+    font-size: 1.7rem;
+    color: var(--blackwhite);
+    
+}
+p {
+    font-size: 1.3rem;
+    color: var(--blackwhite);
+    font-family: 'Poppins', sans-serif;
+}
+hr {
+    border-style: none;
+    border-top-style: dotted;
+    border-color: #01fefe;
+    border-width: 7px;
+    width: 80px;
+    margin: 100px auto;
+}
+.pages-button{
+    background-color: #66BFBF;
+}
+.pages-button:hover{
+    background-color: #20dada;
+}
+.pages-link{
+text-decoration: none;
+color: white;
+}
+/* Navbar */
+
+.navbar{
+    background-color: var(--maincolour);    
+}
+.link-text{
+    font-family: "Montserrat",sans-serif;
+    font-size: 1.25rem;
+    color: var(--blackwhite);
+    position: relative;
+    text-decoration: none;
+}
+.link-text:after{
+    opacity: 0;
+    transition: all 0.3s;
+}
+.link-text:hover::after{
+    content: '';
+    opacity: 1;
+    height: 3px;
+    width: 100%;
+    background-color:#F56EB3;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.link-text:hover {
+    color: #6096B4;
+}
+.search-button{
+    color: var(--blackwhite);
+}
+/*  */
+
+/* About me in html with images */
+.I-m{
+    font-family: 'Sacramento',cursive;
+    font-size: 5.65rem;
+    color: #66BFBF;
+    background-color: var(--maincolour);
+    margin-bottom: 0px;
+}
+.intro1 {
+    text-align: center;
+}
+.a-student{
+    background-color: var(--maincolour);
+    color: #66BFBF;
+    margin-bottom: 0px;
+}
+.land-container{
+    background-color: var(--maincolour);
+}
+.land{
+    max-width: 800px;
+    margin: 0px auto;
+    padding-top: 3%;
+}
+.land-img{
+    width: 100%;
+}
+.cloud-right-container{
+    background-color: var(--maincolour);
+    position:absolute;
+    right: 15%;
+}
+.cloud-left-container{
+    background-color: var(--maincolour);
+    position:absolute;
+    left: 15%;;
+}
+/* About me pages */
+#about-me-with-images{
+    margin-bottom: 5%;
+}
+.about-me-container{
+    background-color: var(--skills-color);
+    text-align: center;
+}
+.introduction{
+    max-width: 350px;
+    margin: 0 auto;
+}
+.my-description{
+    margin-top: 20px;
+}
+.hi{
+    color: #66BFBF;
+}
+
+/* Title */
+.name{
+    font-size: 3rem;
+    color: #6096B4;
+    font-weight: bold;
+}
+.intro{
+    color: #66BFBF;
+}
+
+/* Certificates.html */
+#certificates{
+    background-color: var(--maincolour);
+    padding-top: 3%;
+}
+.c-heading h1{
+    text-align: center;
+    font-size: 3rem;
+    color: #f460a3;
+}
+.certificates-heading{
+    margin-bottom: 2.5rem;
+}
+.new{
+    font-size: 1.6rem;
+    font-weight: normal;
+    color: #6096B4;
+}
+/* About-Html */
+.title {
+    padding: 7% 8.5%;
+    background-color: var(--maincolour);
+    padding-top: 3rem;
+}
+#Education{
+    /* background-color: #91D8E4; */
+    padding: 4% 8.5%;
+    background-color: var(--skills-color);
+   
+}
+.Heading{
+    color: #6096B4;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.site-link{
+    font-size: 1.3rem;
+    position: relative;
+    text-decoration: none;
+}
+.site-link:hover{
+    color:#F56EB3;
+}
+.site-link::after{
+    content: "";
+    position:absolute;
+    background-color: #F56EB3;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+.site-link:hover:after{
+    width: 100%;
+}
+.Course-title{
+    color: #6096B4;
+}
+.course-name{
+    color: #F56EB3;
+    font-weight: bold;
+}
+.site-padding{
+    padding-top: 5%;
+}
+
+/* Skills About.html*/
+#Skills{
+    padding-top: 4%;
+    background-color: var(--skills-color);
+}
+.skills{
+    text-align: left;
+    width: 50%;
+    margin: 100px auto;
+    line-height: 2;
+}
+.code-img{
+    width: 25%;
+    height: 25%;
+    float: left;
+    margin-right: 5%;
+    margin-bottom: 3%;
+}
+.information{
+    color: #1C3879;
+    font-size: 1.3rem;
+}
+.C-img{
+    width: 25%;
+    float: right;
+    margin-left: 5%;
+    margin-bottom: 3%;
+}
+.navbar-toggler{
+    color: white;
+    border: 0.5px solid white;
+}
+.certificates-img{
+    margin-bottom: 1%;
+}
+.certificate-gif-container{
+    background-color: var(--maincolour);
+}
+@media screen and (max-width:990px) {
+    .certificates-img {
+        margin-bottom: 2%;
+    }
+}
+@media screen and (max-width:668px) {
+ .skills{
+    width: 80%;
+    margin-top: 3.4rem;
+ }   
+ .Course-title{
+    font-size: 1.5rem;
+ }
+ .Heading{
+    font-size: 1.8rem;
+ }
+ .name{
+    font-size: 2.5rem;
+    font-weight: normal;
+ }
+ 
+}
+@media screen and (max-width:1200px){
+    .cloud-left-container,.cloud-right-container{
+        display: none;
+    }
+}
+/* Dark-Light Theme */
+#theme-icon {
+    background: #fff;
+    font-size: 1.5rem;
+    margin-right: 7%;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    padding: 4px;
+    border: 2px solid rgb(82, 72, 72);
+    border-radius: 68%;
+
+}
+
+.darkicon {
+    background: #fff;
+    font-size: 1.5rem;
+    margin-right: 7%;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    padding: 6px;
+    border-radius: 68%;
+
+}
+
+.dark-theme {
+    --maincolour: #000;
+    --blackwhite: #fff;
+    --skills-color: #000;
+}
+
+.box {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+}
+
+.box::before {
+    content: ' ';
+    position: absolute;
+    inset: -10px 140px;
+    background: linear-gradient(315deg, #00ccff, #d400d4);
+    transition: 0.5s;
+    animation: animate 4s linear infinite;
+}
+/* .box:hover::before{ 
+     inset:-20px 0px; 
+ } */
+.box::before {
+    inset: -20px 0px;
+}
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.box::after {
+    content: '';
+    position: absolute;
+    inset: 6px;
+    background: #fff;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.content {
+    position: absolute;
+    inset: 10px;
+    border: 6px solid #fff;
+    z-index: 3;
+    border-radius: 50%;
+}
+.content img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+/* footer */
+#footer{
+    background-color: var(--maincolour);
+    padding: 7% 15%;
+    text-align: center;
+}
+.social-icon{
+    font-size: 2rem;
+    margin: 20px 10px;
+    text-decoration: none;
+    color: var(--blackwhite);
+}
+.fa-facebook-f:hover{
+    color: #3b5998;
+    
+}
+.fa-instagram:hover{
+    color: #c13087;
+}
+.fa-discord:hover{
+    color: #5865F2;
+}
+.fa-envelope:hover{
+    color: rgb(232, 232, 176);
+}
+.copyright{
+    color: #F56EB3;
+}
